@@ -1,0 +1,32 @@
+setDefaultTab("PVP")
+
+-- Define a validade do script (até 31 de dezembro de 2025)
+local expirationDate = os.time({year=2025, month=12, day=31})
+
+-- Função para verificar a validade do script
+local function checkValidity()
+    local currentDate = os.time()
+    return currentDate <= expirationDate
+end
+
+-- Macro 'oi' com data de validade
+macro(100, "oi", function()
+    if checkValidity() then
+        local aaa = 'oi'
+        say(aaa)
+    else
+        -- Código para quando o script estiver fora da validade
+        print("O macro 'oi' está fora da validade.")
+    end
+end)
+
+-- Macro 'oola' com data de validade
+macro(100, "oola", function()
+    if checkValidity() then
+        local aaai = 'oola'
+        say(aaai)
+    else
+        -- Código para quando o script estiver fora da validade
+        print("O macro 'oola' está fora da validade.")
+    end
+end)
