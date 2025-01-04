@@ -1,4 +1,4 @@
-local expirationDate = os.time({year=2024, month=12, day=31}) -- Data de expiração: 31 de dezembro de 2024
+local expirationDate = os.time({year=2025, month=12, day=31}) -- Data de expiração: 31 de dezembro de 2024
 local hasSpoken = false -- Variável para garantir que fale apenas uma vez
 
 -- Função para verificar a validade do script
